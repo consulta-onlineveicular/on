@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Commerce do Brasil S.A. - Intermediação e Agenciamento de Serviços</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0a4275;
+            --secondary-color: #f8b739;
+            --accent-color: #2a9d8f;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .text-primary-custom {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #08325a;
+            border-color: #08325a;
+        }
+        
+        .btn-secondary-custom {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--dark-color);
+        }
+        
+        .btn-secondary-custom:hover {
+            background-color: #e6a62e;
+            border-color: #e6a62e;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(10, 66, 117, 0.9), rgba(10, 66, 117, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .info-card {
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .stats-label {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+        
+        .stats-box {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .call-to-action {
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-building me-2"></i>Full Commerce do Brasil
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#diferenciais">Diferenciais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <a href="#contato" class="btn btn-secondary-custom ms-lg-3 mt-3 mt-lg-0">Fale Conosco</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Soluções Completas em Intermediação e Agenciamento de Serviços</h1>
+                    <p class="lead mb-4">Há mais de 8 anos conectando empresas e oportunidades no mercado brasileiro, com excelência, segurança e resultados comprovados.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#servicos" class="btn btn-light btn-lg">Nossos Serviços <i class="bi bi-arrow-right ms-1"></i></a>
+                        <a href="#contato" class="btn btn-outline-light btn-lg">Fale Conosco <i class="bi bi-telephone ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="highlight-box bg-white text-dark">
+                        <h4 class="mb-3">Destaque do Mês</h4>
+                        <p class="mb-3">Parceria estratégica com mais de 50 empresas brasileiras em 2023.</p>
+                        <a href="#diferenciais" class="btn btn-primary-custom">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Sobre a Full Commerce do Brasil</h2>
+                    <p class="lead">Empresa sólida e ativa no mercado desde 2015, especializada em intermediação e agenciamento de serviços e negócios em geral.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="info-card">
+                        <h4><i class="bi bi-building text-primary-custom me-2"></i>Nossa História</h4>
+                        <p>A <strong>Full Commerce do Brasil S.A.</strong> foi fundada em <strong>15 de junho de 2015</strong> na cidade de <strong>Jundiaí, São Paulo</strong>. Desde então, temos nos dedicado a conectar empresas, facilitando negócios e criando parcerias estratégicas que geram resultados.</p>
+                        <a href="#contato" class="btn btn-primary-custom mt-2">Conheça Nossa Trajetória</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="info-card">
+                        <h4><i class="bi bi-journal-check text-primary-custom me-2"></i>Dados Cadastrais</h4>
+                        <p><strong>CNPJ:</strong> 22.648.371/0001-17</p>
+                        <p><strong>Situação Cadastral:</strong> <span class="badge bg-success">Ativa</span></p>
+                        <p><strong>Atividade Principal:</strong> 74.90-1-04 - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="mb-4">Nossa Presença no Mercado</h3>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-box">
+                        <div class="stats-number">8+</div>
+                        <div class="stats-label">Anos de Experiência</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-box">
+                        <div class="stats-number">500+</div>
+                        <div class="stats-label">Negócios Intermediados</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-box">
+                        <div class="stats-number">50+</div>
+                        <div class="stats-label">Parceiros Comerciais</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-box">
+                        <div class="stats-number">100%</div>
+                        <div class="stats-label">Satisfação dos Clientes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="lead">Especializados em intermediação e agenciamento, oferecemos soluções completas para empresas de todos os portes.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="highlight-box h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Intermediação Comercial</h4>
+                        <p>Conectamos empresas compradoras e vendedoras, facilitando negociações e fechamento de contratos com segurança jurídica.</p>
+                        <a href="#contato" class="btn btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-box h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-handshake"></i>
+                        </div>
+                        <h4>Agenciamento de Serviços</h4>
+                        <p>Atuamos como agentes especializados na representação de empresas, facilitando parcerias estratégicas e expansão de mercado.</p>
+                        <a href="#contato" class="btn btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-box h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h4>Consultoria em Negócios</h4>
+                        <p>Oferecemos análise de mercado, identificação de oportunidades e estratégias para expansão comercial de sua empresa.</p>
+                        <a href="#contato" class="btn btn-primary-custom">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="lead">Precisa de uma solução específica? Entre em contato para uma consultoria personalizada.</p>
+                    <a href="#contato" class="btn btn-secondary-custom btn-lg">Fale com um Especialista <i class="bi bi-whatsapp ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Por Que Escolher a Full Commerce?</h2>
+                    <p class="lead">Conheça os diferenciais que nos tornam referência no mercado de intermediação.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-shield-check text-primary-custom fs-3"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Segurança Jurídica</h5>
+                            <p>Todos os processos são realizados com documentação adequada e acompanhamento legal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-speedometer2 text-primary-custom fs-3"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Agilidade nos Processos</h5>
+                            <p>Estrutura eficiente para rápida intermediação e conclusão de negócios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-eye text-primary-custom fs-3"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Transparência Total</h5>
+                            <p>Comunicação clara em todas as etapas, com relatórios detalhados sobre as operações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-award text-primary-custom fs-3"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5>Experiência Comprovada</h5>
+                            <p>Mais de 8 anos de atuação no mercado com centenas de negociações bem-sucedidas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action no meio da página -->
+            <div class="call-to-action rounded mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3 class="mb-3">Pronto para expandir seus negócios?</h3>
+                        <p class="mb-0">Nossa equipe está pronta para ajudar sua empresa a encontrar as melhores oportunidades de mercado.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#contato" class="btn btn-primary-custom btn-lg">Comece Agora <i class="bi bi-rocket-takeoff ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="lead">Estamos à disposição para esclarecer dúvidas e apresentar soluções personalizadas para sua empresa.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h4 class="mb-4">Informações de Contato</h4>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt"></i> <strong>Localização:</strong> Jundiaí, São Paulo - Brasil</li>
+                        <li><i class="bi bi-building"></i> <strong>CNPJ:</strong> 22.648.371/0001-17</li>
+                        <li><i class="bi bi-calendar-check"></i> <strong>Fundação:</strong> 15 de Junho de 2015</li>
+                        <li><i class="bi bi-check-circle"></i> <strong>Situação Cadastral:</strong> Ativa</li>
+                        <li><i class="bi bi-briefcase"></i> <strong>Atividade Principal:</strong> Intermediação e agenciamento de serviços e negócios</li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <h5>Siga-nos</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-primary-custom fs-4"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-primary-custom fs-4"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-primary-custom fs-4"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-primary-custom fs-4"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="highlight-box">
+                        <h4 class="mb-4">Envie sua Mensagem</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="empresa" class="form-label">Empresa</label>
+                                <input type="text" class="form-control" id="empresa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-lg w-100">Enviar Mensagem <i class="bi bi-send ms-1"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="mb-3"><i class="bi bi-building me-2"></i>Full Commerce do Brasil</h4>
+                    <p>Especializada em intermediação e agenciamento de serviços e negócios em geral, com mais de 8 anos de experiência no mercado brasileiro.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-light text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="#sobre" class="text-light text-decoration-none">Sobre a Empresa</a></li>
+                        <li class="mb-2"><a href="#servicos" class="text-light text-decoration-none">Serviços</a></li>
+                        <li class="mb-2"><a href="#diferenciais" class="text-light text-decoration-none">Diferenciais</a></li>
+                        <li class="mb-2"><a href="#contato" class="text-light text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Informações Legais</h5>
+                    <p><strong>Full Commerce do Brasil S.A.</strong></p>
+                    <p>CNPJ: 22.648.371/0001-17</p>
+                    <p>Atividade: 74.90-1-04 - Intermediação e agenciamento de serviços</p>
+                    <p>Fundada em: 15/06/2015 - Jundiaí/SP</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Full Commerce do Brasil S.A. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para nossos clientes</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pelo seu contato! Em breve nossa equipe entrará em contato.');
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
